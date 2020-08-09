@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Enemies of the People" startnode="1" creator="Twine" creator-version="2.2.1" ifid="DA758142-71BA-462D-A69A-D0CD42DE6552" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
+<tw-storydata name="Enemies of the People" startnode="1" creator="Twine" creator-version="2.3.9" ifid="DA758142-71BA-462D-A69A-D0CD42DE6552" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
 color:red;
 background:black;
 }
@@ -31,7 +31,7 @@ tw-link, tw-hook{color: yellow}
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio'); 
-audio.src= 'https://vocaroo.com/media_command.php?media=s1ONw8bXSYyv&command=download_mp3'; audio.loop = true;
+audio.src= 'https://github.com/Lamonkey/An_enemy_of_people/raw/master/Assets/8bit_soviet_theme.mp3'; audio.loop = true;
 audio.play(); 
 
 
@@ -175,9 +175,9 @@ One of the guards whispers into Stalin&#39;s ear.
 &quot;We will punish the NKVD officers who failed to protect Kirov by leaving him unprotected.&quot;
 
 [[say nothing]]
-[[Didn&#39;t you order the NKVD officers to leave him unattended?]]</tw-passagedata><tw-passagedata pid="20" name="Didn&#39;t you order the NKVD officers to leave him unattended?" tags="" position="2569.3333333333335,699" size="100,100">&quot;No.&quot; 
+[[Didn&#39;t you order the NKVD officers to leave him unattended?]]</tw-passagedata><tw-passagedata pid="20" name="Didn&#39;t you order the NKVD officers to leave him unattended?" tags="" position="2569,699" size="100,100">&quot;No.&quot; 
 
-(link: &quot;Ok&quot;)[(goto: &quot;Say Nothing&quot;)]</tw-passagedata><tw-passagedata pid="21" name="say nothing" tags="" position="2447,918" size="100,100">None of the party members say anything.
+(link: &quot;Ok&quot;)[(goto: &quot;say nothing&quot;)]</tw-passagedata><tw-passagedata pid="21" name="say nothing" tags="" position="2447,918" size="100,100">None of the party members say anything.
 
 &quot;Hmm...&quot;
 
@@ -472,7 +472,7 @@ Try walking further, you might find something]
 [[Where is Blyukher]]</tw-passagedata><tw-passagedata pid="57" name="Ask for security log" tags="" position="4084,927" size="100,100">
 &quot;The security logs are all in my office if you would follow me, comrade&quot;
 [[Follow him to the office]]
-(link:&quot;back&quot;)[(goto:&quot;Go inside&quot;)]</tw-passagedata><tw-passagedata pid="58" name="Ask for the brief" tags="" position="4238,922.3333333333334" size="100,100">
+(link:&quot;back&quot;)[(goto:&quot;Go inside&quot;)]</tw-passagedata><tw-passagedata pid="58" name="Ask for the brief" tags="" position="4238,922" size="100,100">
 
 (set: $breif to true)
 Administrator: &quot;Everything is under control comrade, we have enough guards and weapons. No inmates can escape from here &quot;
@@ -601,7 +601,8 @@ It appears he has keys for all other cells.
 (if: $hasGun is true)[
 [[Use gun to threat the guard.]]]
 (else:)[If you have a weapon, maybe you could take the key from the guard]
-(link:&quot;back&quot;)[(goto:&quot;cell&quot;)]</tw-passagedata><tw-passagedata pid="78" name="check other cells" tags="" position="6249.333333333333,367" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="Try to unlock it with key you found in the office" tags="" position="5951,520" size="100,100">You found a way to safe way to escape. 
+(link:&quot;back&quot;)[(goto:&quot;cell&quot;)]</tw-passagedata><tw-passagedata pid="78" name="check other cells" tags="" position="6249,367" size="100,100">There are nothing in other cells
+(link:&quot;back&quot;)[(goto:&quot;cell&quot;)]</tw-passagedata><tw-passagedata pid="79" name="Try to unlock it with key you found in the office" tags="" position="5951,520" size="100,100">You found a way to safe way to escape. 
 (set:$routB to true)
 (link:&quot;back&quot;)[(goto:&quot;cell&quot;)]</tw-passagedata><tw-passagedata pid="80" name="Use gun to threat the guard." tags="" position="6105,517" size="100,100">The guard was scared when you pointed a gun at him.
 He is begging you to not to kill him.
@@ -643,7 +644,7 @@ You barely defeated the guards. It&#39;s lucky both of you have weapons.
 (link:&quot;continou&quot;)[(goto:&quot;sucessfully escaped&quot;)]</tw-passagedata><tw-passagedata pid="86" name="don&#39;t have knife" tags="" position="6545,867" size="100,100">You Failed 
 Blyukher was killed during the escape.
 If he had a weapon, things could end differently.
-(link:&quot;Try the rescue again&quot;)[(goto:&quot;variables&quot;)]</tw-passagedata><tw-passagedata pid="87" name="escape from front entry" tags="" position="6690.666666666667,704" size="100,100">You chose to use the front entry.
+(link:&quot;Try the rescue again&quot;)[(goto:&quot;variables&quot;)]</tw-passagedata><tw-passagedata pid="87" name="escape from front entry" tags="" position="6690,704" size="100,100">You chose to use the front entry.
 There are so many guards that even hard to reach the front entry from here.
 (if:$securityLog is true)[
 	(link:&quot;continous&quot;)[(goto:&quot;use security log&quot;)]]
